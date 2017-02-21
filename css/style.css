@@ -16,7 +16,21 @@ nav {
     background-color: white;
 }
 
+ul {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    list-style-type: none;
+}
+
 nav li {
     text-align: center;
+    margin: 5vh 0;
+}
+
+nav li a {
     font: 40px 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #03526F;
 }
