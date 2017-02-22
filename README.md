@@ -28,9 +28,14 @@
 ---
 
 ## Technologies used:
-- HTML5 (semantic)
+- HTML5
 - CSS3
+- JavaScript
 
+## File structure
+/index.html (single page website)
+/css/style.css (main stylesheet)
+/js/main.js (main scripts)
 
 # Todo:
 - things will go here soon...
@@ -38,20 +43,15 @@
 - **Plan for today**
 
 Build basic online of site
-		1. Landing page
-			m4v15&HS finish basic CSS
-		2. Nav Bar
-			JWLD&Macintosh finish basic CSS
-		
-		should be done and pulled by lunchtime
+- [ ] Landing page - m4v15&HS finish basic CSS
+- [x] Nav Bar - JWLD&Macintosh finish basic CSS
+- [ ]		should be done and pulled by lunchtime
 
-		3. About
-		4. Team
-			both above done by one pair and also making the CSS nicer
-		5. Contact
-			mailto form should be developed here by one pair
+- [ ] About
+- [ ] Team - both above done by one pair and also making the CSS nicer
+- [ ] Contact - mailto form should be developed here by one pair
 
-		
+
 -  CSS should all be mobile first
 -  HTML should be designed with accessibility in mind
 
@@ -65,4 +65,3 @@ Random things:
 - Work on a branch for each major task, pull at the end
 - Comment loads
 - readme
-
