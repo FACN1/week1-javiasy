@@ -12,3 +12,15 @@ document.getElementById('nav-button').addEventListener("click", function() {
         navVisible = false;
     }
 });
+
+var navlink=document.querySelectorAll('nav li a')
+
+for (var i=0; i<navlink.length; i++){
+  navlink[i].addEventListener("click", function(){
+  document.getElementById('main-nav').style.display = '';
+  navVisible = false;
+});
+}
+
+//simple script to make button visible if JS enabled (default not visible)
+document.getElementById('js-button').style.display = 'block';

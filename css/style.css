@@ -11,6 +11,11 @@
 button:hover {
     cursor: pointer;
 }
+
+section {
+  padding:8px;
+  min-height: 100vh;
+}
 /* END GLOBAL */
 body{
 
@@ -79,6 +84,7 @@ html, body{
     height: 100%;
     background-color: #cfd8dc;
     display: none;
+    z-index: 10;
 }
 
 ul {
@@ -106,9 +112,59 @@ nav li a {
     right: 16px;
     top: 0;
     font-size: 50px;
+    z-index: 20;
     color: #03526F;
-    z-index: 1;
     background-color: transparent;
+
+}
+
+#team-section h2 {
+  text-align: left;
+  font-size: 30px;
+}
+
+#team-section img {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#team-section p{
+  margin-bottom: 35px;
+}
+
+#contact-section {
+  width: 80%;
+  margin: auto;
+}
+
+#contact-section form{
+  margin: 16px 0;
+}
+
+
+
+#contact-section input, #contact-section textarea {
+  margin: 8px 0;
+  border: 1px solid grey;
+  padding: 8px;
+  width:100%;
+  border-radius: 3px;
+}
+
+#contact-section .contact-button {
+  width:100px;
+  background-color: #42AFF5;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+
+}
+
+#contact-section .contact-button:hover{
+  cursor: pointer;
 }
 
 @media (min-width: 480px) { /*--- TABLET AND DESKTOP ---*/
@@ -117,6 +173,29 @@ nav li a {
     #main-nav {
         width: 250px;
     }
+
+    #team-section{
+      position: relative;
+    }
+
+    #team-container{
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+    }
+
+
+    #team-section .team-profile{
+      width:25%;
+      float:left;
+    }
+
+    #team-section .team-profile::after{
+      clear:both;
+      content:"";
+      display: table;
+    }
+
 
 }
 @media (min-width: 1024px) { /*--- DESKTOP ONLY ---*/
