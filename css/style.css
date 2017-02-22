@@ -7,6 +7,12 @@
 }
 
 /* END RESET */
+/* GLOBAL CSS */
+button:hover {
+    cursor: pointer;
+}
+/* END GLOBAL */
+
 
 html, body{
   height: 100%;
@@ -37,13 +43,14 @@ html, body{
   transform: translate(-50%,-50%);
 }
 
-nav {
-    display:none;
+#main-nav {
     position: fixed;
     top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #cfd8dc;
+    display: none;
 }
 
 ul {
@@ -63,4 +70,37 @@ nav li a {
     font: 40px 'Roboto', sans-serif;
     text-decoration: none;
     color: #03526F;
+}
+/* -------------------------------------------- */
+
+#nav-button {
+    position: fixed;
+    right: 16px;
+    top: 0;
+    font-size: 50px;
+    color: black;
+    z-index: 1;
+    background-color: transparent;
+}
+
+@media (min-width: 480px) { /*--- TABLET AND DESKTOP ---*/
+
+  /*--- Turn mobile nav into a sidebar ---*/
+    #main-nav {
+        width: 300px;
+    }
+
+}
+@media (min-width: 1024px) { /*--- DESKTOP ONLY ---*/
+    /*--- Make sidebar nav always show ---*/
+    #main-nav {
+        display: block;
+    }
+    /*--- Hide mobile/tablet button ---*/
+    #nav-button {
+        display: none;
+    }
+    body {
+        margin-right: 300px;
+    }
 }
