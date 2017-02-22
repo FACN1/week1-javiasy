@@ -56,6 +56,7 @@ html, body{
     height: 100%;
     background-color: #cfd8dc;
     display: none;
+    z-index: 10;
 }
 
 ul {
@@ -84,8 +85,9 @@ nav li a {
     top: 0;
     font-size: 50px;
     color: black;
-    z-index: 1;
+    z-index: 20;
     background-color: transparent;
+
 }
 
 #team-section h2 {
@@ -143,6 +145,29 @@ nav li a {
     #main-nav {
         width: 300px;
     }
+
+    #team-section{
+      position: relative;
+    }
+
+    #team-container{
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+    }
+
+
+    #team-section .team-profile{
+      width:25%;
+      float:left;
+    }
+
+    #team-section .team-profile::after{
+      clear:both;
+      content:"";
+      display: table;
+    }
+
 
 }
 @media (min-width: 1024px) { /*--- DESKTOP ONLY ---*/
