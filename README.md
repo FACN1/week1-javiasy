@@ -1,4 +1,5 @@
 # week1-javiasy
+# FINAL SITE: https://facn1.github.io/week1-javiasy/
 
 ---
 # Why?
@@ -38,7 +39,8 @@
 /js/main.js (main scripts)
 
 # Todo:
-- things will go here soon...
+- [ ] Put the nav inside a noscript element as a fallback for non JS users
+- [x] On click event of nav links, close nav bar for mobile.
 
 - **Plan for today**
 

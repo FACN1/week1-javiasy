@@ -30,7 +30,7 @@ html, body{
   font-family: 'Roboto', sans-serif;
 }
 
-.landingpage, #aboutpage {
+#landing-section, #about-section {
     position: relative;
   width: 100%;
   height: 100%;
@@ -38,36 +38,36 @@ html, body{
   background-color: #f0f5f5;
 }
 
-.landingpage div, #aboutpage div {
+#landing-section div, #about-section div {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.landingpage header{
+#landing-section header{
   font-size: 2.5rem;
 }
 
-.landingpage article{
+#landing-section article{
   font-size: 1.5rem;
   margin: auto;
 }
 
 /* ABOUT SECTION */
 
-#aboutpage{
+#about-section{
     background-image: url("../pix/aboutbackground.png");
     background-position: center;
     background-size: cover;
     color: white;
 }
 
-#aboutpage header{
+#about-section header{
     font-size: 3rem;
 }
 
-#aboutpage article{
+#about-section article{
     font-size: 1rem;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
@@ -212,17 +212,17 @@ nav li a {
         margin-right: 250px;
     }
 
-    .landingpage header{
+    #landing-section header{
       font-size: 4rem;
     }
 
-    .landingpage article{
+    #landing-section article{
       font-size: 2rem;
     }
 
 
 
-    #aboutpage  article{
+    #about-section  article{
       font-size: 1.2rem;
     }
 
