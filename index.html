@@ -21,17 +21,19 @@
         </article>
       </section>
 
-
-	<button id='nav-button' tabindex="1">&#9776;</button>
+<!-- put the button in a div that defaults display to none but if js enabled is block -->
+  <div id="js-button" style="display:none">
+    <button id='nav-button' tabindex="1">&#9776;</button>
+  </div>
         <nav id="main-nav">
             <ul>
-                <li><a href="#home">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#team">TEAM</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#team-section">TEAM</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
             </ul>
         </nav>
-
+<!-- Section about the team -->
   <section id="team-section">
       <h2>TEAM</h2>
       <div class="team-profile">
@@ -60,6 +62,7 @@
       </div>
   </section>
 
+<!-- section to contact us via email -->
   <section id="contact-section">
     <h2>CONTACT US</h2>
     <form action="mailto:someone@example.com?subject=I want a website" method="post" enctype="text/plain">

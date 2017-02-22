@@ -12,3 +12,6 @@ document.getElementById('nav-button').addEventListener("click", function() {
         navVisible = false;
     }
 });
+
+//simple script to make button visible if JS enabled (default not visible)
+document.getElementById('js-button').style.display = 'block';
