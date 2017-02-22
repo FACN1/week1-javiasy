@@ -7,13 +7,19 @@
 }
 
 /* END RESET */
+/* GLOBAL CSS */
+button:hover {
+    cursor: pointer;
+}
+/* END GLOBAL */
 
-nav {
+#main-nav {
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: white;
+    display: none;
 }
 
 ul {
@@ -34,3 +40,20 @@ nav li a {
     text-decoration: none;
     color: #03526F;
 }
+
+
+#nav-button {
+    position: fixed;
+    right: 16px;
+    top: 0;
+    font-size: 50px;
+    color: black;
+    z-index: 1;
+    background-color: transparent;
+}
+
+/*@media (max-width: 480px) {
+    nav {
+        display: block;
+    }
+}*/
