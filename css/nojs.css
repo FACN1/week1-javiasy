@@ -1,0 +1,23 @@
+#main-nav {
+    display: block;
+    height: 70px;
+    width: 100%;
+    margin: 0 auto;
+}
+nav ul {
+    position: static;
+    display: inline-block;
+    transform: none;
+}
+nav li {
+    float: left;
+    margin: 5vh 2vh;
+}
+nav li a {
+    font-size: 17px;
+}
+@media (min-width: 1024px) {
+    body {
+        margin-right: 0px;
+    }
+}

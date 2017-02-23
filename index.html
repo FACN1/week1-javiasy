@@ -10,6 +10,9 @@
         <!-- Todo: Setup favicon.ico -->
 
         <link rel="stylesheet" href="css/style.css">
+        <noscript>
+            <link rel="stylesheet" href="css/nojs.css">
+        </noscript>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     </head>
     <body>
@@ -47,25 +50,25 @@
       <h2>TEAM</h2>
       <div id="team-container">
       <div class="team-profile">
-        <img src="./img/placeholder.jpeg"/>
+        <img src="./img/placeholder.jpeg" alt="HilbertSpitzer user picture"/>
         <h3>HilbertSpitzer</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
           mod tempor incididunt ut labore et dolore magna aliqua. </p>
       </div>
       <div class="team-profile">
-        <img src="./img/placeholder.jpeg"/>
+        <img src="./img/placeholder.jpeg" alt="macintoshhelper user picture"/>
         <h3>macintoshhelper</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
           mod tempor incididunt ut labore et dolore magna aliqua. </p>
       </div>
       <div class="team-profile">
-        <img src="./img/placeholder.jpeg"/>
+        <img src="./img/placeholder.jpeg" alt="JWLD user picture"/>
         <h3>JWLD</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
           mod tempor incididunt ut labore et dolore magna aliqua. </p>
       </div>
       <div class="team-profile">
-        <img src="./img/placeholder.jpeg"/>
+        <img src="./img/placeholder.jpeg" alt="m4v15 user picture"/>
         <h3>m4v15</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
           mod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -80,7 +83,7 @@
       <label for="contact-name">Name:</label>
       <input type="text" id="contact-name" name="name" placeholder="First Last">
       <label for="contact-email">Email:</label>
-      <input type="text" id="contact-email" name="email" placeholder="someone@example.com">
+      <input type="email" id="contact-email" name="email" placeholder="someone@example.com">
       <label for="contact-name">Message:</label>
       <textarea id="contact-message" name="message" placeholder="..."></textarea>
       <input class="contact-button" type="submit" value="SEND">
