@@ -152,6 +152,10 @@ nav li a {
     border-radius: 3px;
 }
 
+#contact-message {
+    height: 80px;
+}
+
 #contact-section .contact-button {
     width: 100px;
     background-color: #42AFF5;
@@ -183,7 +187,7 @@ nav li a {
     }
 
     #team-section .team-profile {
-        width: 25%;
+        width: 50%;
         float: left;
     }
 
