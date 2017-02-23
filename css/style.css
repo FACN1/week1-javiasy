@@ -17,10 +17,6 @@ section {
   min-height: 100vh;
 }
 /* END GLOBAL */
-body{
-
-
-}
 
 
 html, body{
@@ -109,20 +105,17 @@ nav li a {
 
 #nav-button {
     position: fixed;
-    right: 16px;
-    top: 0;
-    font-size: 50px;
+    right: 25px;
+    top: 25px;
     z-index: 20;
     color: #03526F;
-    background-color: rgba(211, 239, 247, 0.81);
+    background-color: rgba(240, 245, 245, 0.86);
     border: 3px solid black;
     border-radius: 33%;
     width: 55px;
     height: 55px;
-    font-size: 35px;
+    font-size: 32px;
     padding-bottom: 3px;
-    margin-top: 10px;
-    margin-right: 10px;
 
 }
 
