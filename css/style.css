@@ -1,4 +1,4 @@
-/* RESET */
+/* GENERAL */
 
 * {
     border: 0;
@@ -6,32 +6,30 @@
     margin: 0;
 }
 
-/* END RESET */
-/* GLOBAL CSS */
 button:hover {
     cursor: pointer;
 }
 
 section {
-  padding:8px;
-  min-height: 100vh;
+    padding: 8px;
+    min-height: 100vh;
 }
-/* END GLOBAL */
 
-
-html, body{
-  height: 100%;
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+html, body {
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* LANDING SECTION */
 
 #landing-section, #about-section {
     position: relative;
-  width: 100%;
-  height: 100%;
-  color: #03526F;
-  background-color: #f0f5f5;
+    width: 100%;
+    height: 100%;
+    color: #03526F;
+    background-color: #f0f5f5;
 }
 
 #landing-section div, #about-section div {
@@ -41,36 +39,36 @@ html, body{
     transform: translate(-50%, -50%);
 }
 
-#landing-section header{
-  font-size: 2.5rem;
+#landing-section header {
+    font-size: 2.5rem;
 }
 
-#landing-section article{
-  font-size: 1.5rem;
-  margin: auto;
+#landing-section article {
+    font-size: 1.5rem;
+    margin: auto;
 }
 
 /* ABOUT SECTION */
 
-#about-section{
+#about-section {
     background-image: url("../pix/aboutbackground.png");
     background-position: center;
     background-size: cover;
     color: white;
 }
 
-#about-section header{
+#about-section header {
     font-size: 3rem;
 }
 
-#about-section article{
+#about-section article {
     font-size: 1rem;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
 
-/* NAV BAR */
+/* NAV ELEMENTS */
 
 #main-nav {
     position: fixed;
@@ -101,7 +99,6 @@ nav li a {
     text-decoration: none;
     color: #03526F;
 }
-/* -------------------------------------------- */
 
 #nav-button {
     position: fixed;
@@ -116,95 +113,92 @@ nav li a {
     height: 55px;
     font-size: 32px;
     padding-bottom: 3px;
-
 }
 
+/* TEAM SECTION */
+
 #team-section h2 {
-  text-align: left;
-  font-size: 30px;
+    text-align: left;
+    font-size: 30px;
 }
 
 #team-section img {
-  border: 1px solid black;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
-#team-section p{
-  margin-bottom: 35px;
+#team-section p {
+    margin-bottom: 35px;
 }
+
+/* CONTACT SECTION */
 
 #contact-section {
-  width: 80%;
-  margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
-#contact-section form{
-  margin: 16px 0;
+#contact-section form {
+    margin: 16px 0;
 }
-
-
 
 #contact-section input, #contact-section textarea {
-  margin: 8px 0;
-  border: 1px solid grey;
-  padding: 8px;
-  width:100%;
-  border-radius: 3px;
+    margin: 8px 0;
+    border: 1px solid grey;
+    padding: 8px;
+    width: 100%;
+    border-radius: 3px;
 }
 
 #contact-section .contact-button {
-  width:100px;
-  background-color: #42AFF5;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 3px;
-
+    width: 100px;
+    background-color: #42AFF5;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
 }
 
-#contact-section .contact-button:hover{
-  cursor: pointer;
+#contact-section .contact-button:hover {
+    cursor: pointer;
 }
+
+/* RESPONSIVE DESIGN */
 
 @media (min-width: 480px) { /*--- TABLET AND DESKTOP ---*/
-
-  /*--- Turn mobile nav into a sidebar ---*/
     #main-nav {
         width: 250px;
     }
 
-    #team-section{
-      position: relative;
+    #team-section {
+        position: relative;
     }
 
-    #team-container{
-      position: absolute;
-      top:50%;
-      transform: translateY(-50%);
+    #team-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
-
-    #team-section .team-profile{
-      width:25%;
-      float:left;
+    #team-section .team-profile {
+        width: 25%;
+        float: left;
     }
 
-    #team-section .team-profile::after{
-      clear:both;
-      content:"";
-      display: table;
+    #team-section .team-profile::after {
+        clear: both;
+        content: "";
+        display: table;
     }
-
-
 }
+
 @media (min-width: 1024px) { /*--- DESKTOP ONLY ---*/
-    /*--- Make sidebar nav always show ---*/
     #main-nav {
         display: block;
     }
-    /*--- Hide mobile/tablet button ---*/
+
     #nav-button {
         display: none;
     }
@@ -213,18 +207,15 @@ nav li a {
         margin-right: 250px;
     }
 
-    #landing-section header{
-      font-size: 4rem;
+    #landing-section header {
+        font-size: 4rem;
     }
 
-    #landing-section article{
-      font-size: 2rem;
+    #landing-section article {
+        font-size: 2rem;
     }
 
-
-
-    #about-section  article{
-      font-size: 1.2rem;
+    #about-section article {
+        font-size: 1.2rem;
     }
-
 }

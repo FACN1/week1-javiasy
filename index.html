@@ -1,93 +1,97 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Javiasy Portfolio</title>
-        <meta name="description" content="HTML, CSS and JavaScript Developers">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Todo: Setup favicon.ico -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Javiasy Portfolio</title>
+    <meta name="description" content="HTML, CSS and JavaScript Developers">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO setup favicon.ico -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+</head>
 
-        <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    </head>
-    <body>
-	  <!-- section for landingpage with symantic html 5 elements-->
-      <section id="landing-section">
-          <div>
-              <header><h1>JAVIASY</h1></header>
-              <article><p>HTML CSS and Javascript development team, based in Nazareth</p></article>
-          </div>
-      </section>
+<body>
+    <!-- landing section -->
+    <section id="landing-section">
+        <div>
+            <header>
+                <h1>JAVIASY</h1></header>
+            <article>
+                <p>HTML CSS and Javascript development team, based in Nazareth</p>
+            </article>
+        </div>
+    </section>
 
-<!-- put the button in a div that defaults display to none but if js enabled is block -->
+    <!-- about section -->
+    <section id="about-section">
+        <div>
+            <header>
+                <h1>ABOUT</h1></header>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at condimentum risus. Sed gravida tellus nec massa vehicula accumsan. Morbi tempus ex nec neque tincidunt, eu laoreet arcu volutpat. Suspendisse congue maximus nunc quis finibus.
+                    Aliquam vehicula urna eget ipsum condimentum, ac tempor felis finibus. Nam consectetur malesuada justo, hendrerit porttitor quam rutrum a. Nullam fermentum tempor sem, nec eleifend quam mollis a.</p>
+            </article>
+        </div>
+    </section>
 
-      <section id="about-section">
-          <div>
-              <header><h1>ABOUT</h1></header>
-              <article><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at condimentum risus. Sed gravida tellus nec massa vehicula accumsan. Morbi tempus ex nec neque tincidunt, eu laoreet arcu volutpat. Suspendisse congue maximus nunc quis finibus. Aliquam vehicula urna eget ipsum condimentum, ac tempor felis finibus. Nam consectetur malesuada justo, hendrerit porttitor quam rutrum a. Nullam fermentum tempor sem, nec eleifend quam mollis a.</p></article>
-          </div>
-      </section>
+    <!-- team section -->
+    <section id="team-section">
+        <h2>TEAM</h2>
+        <div id="team-container">
+            <div class="team-profile">
+                <img src="./img/placeholder.jpeg" />
+                <h3>HilbertSpitzer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="team-profile">
+                <img src="./img/placeholder.jpeg" />
+                <h3>macintoshhelper</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="team-profile">
+                <img src="./img/placeholder.jpeg" />
+                <h3>JWLD</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="team-profile">
+                <img src="./img/placeholder.jpeg" />
+                <h3>m4v15</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+    </section>
 
+    <!-- contact section    -->
+    <section id="contact-section">
+        <h2>CONTACT US</h2>
+        <form action="mailto:someone@example.com?subject=I want a website" method="post" enctype="text/plain">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="name" placeholder="First Last">
+            <label for="contact-email">Email:</label>
+            <input type="text" id="contact-email" name="email" placeholder="someone@example.com">
+            <label for="contact-name">Message:</label>
+            <textarea id="contact-message" name="message" placeholder="..."></textarea>
+            <input class="contact-button" type="submit" value="SEND">
+            <input class="contact-button" type="reset" value="RESET">
+        </form>
+    </section>
 
-  <div id="js-button" style="display:none">
-    <button id='nav-button' tabindex="1">&#9776;</button>
-  </div>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#about-section">ABOUT</a></li>
-                <li><a href="#team-section">TEAM</a></li>
-                <li><a href="#contact-section">CONTACT</a></li>
-            </ul>
-        </nav>
-<!-- Section about the team -->
-  <section id="team-section">
-      <h2>TEAM</h2>
-      <div id="team-container">
-      <div class="team-profile">
-        <img src="./img/placeholder.jpeg"/>
-        <h3>HilbertSpitzer</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
-          mod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-      <div class="team-profile">
-        <img src="./img/placeholder.jpeg"/>
-        <h3>macintoshhelper</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
-          mod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-      <div class="team-profile">
-        <img src="./img/placeholder.jpeg"/>
-        <h3>JWLD</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
-          mod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-      <div class="team-profile">
-        <img src="./img/placeholder.jpeg"/>
-        <h3>m4v15</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
-          mod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
+    <!-- navigation elements -->
+    <div id="js-button" style="display:none"> <!-- defaults display to none, but if js enabled is block -->
+        <button id='nav-button' tabindex="1">&#9776;</button>
     </div>
-  </section>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about-section">ABOUT</a></li>
+            <li><a href="#team-section">TEAM</a></li>
+            <li><a href="#contact-section">CONTACT</a></li>
+        </ul>
+    </nav>
 
-<!-- section to contact us via email -->
-  <section id="contact-section">
-    <h2>CONTACT US</h2>
-    <form action="mailto:someone@example.com?subject=I want a website" method="post" enctype="text/plain">
-      <label for="contact-name">Name:</label>
-      <input type="text" id="contact-name" name="name" placeholder="First Last">
-      <label for="contact-email">Email:</label>
-      <input type="text" id="contact-email" name="email" placeholder="someone@example.com">
-      <label for="contact-name">Message:</label>
-      <textarea id="contact-message" name="message" placeholder="..."></textarea>
-      <input class="contact-button" type="submit" value="SEND">
-      <input class="contact-button" type="reset" value="RESET">
-    </form>
-  </section>
+</body>
+<script src='./js/main.js'></script>
 
-    </body>
-    <script src='./js/main.js'></script>
 </html>
